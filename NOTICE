@@ -1,0 +1,11 @@
+mermaid-unicode
+Copyright 2026
+
+This product is a Python port of `crates/codegen/xai-grok-markdown/src/mermaid.rs`
+from grok-build (https://github.com/xai-org/grok-build), Copyright 2023-2026 SpaceXAI,
+licensed under the Apache License, Version 2.0. Ported from upstream commit
+a28ee2b2063426e8816e380ccea528b9de95e5da.
+
+mermaid_unicode/unicode_width.py and the generated tables in mermaid_unicode/_uw_tables.py
+are derived from the `unicode-width` crate version 0.2.0 (https://github.com/unicode-rs/unicode-width),
+Copyright 2012-2022 The Rust Project Developers, dual-licensed under MIT / Apache-2.0.
