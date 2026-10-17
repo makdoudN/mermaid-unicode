@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mermaid-unicode"
+version = "0.4.0"
+description = "Mermaid diagrams to Unicode box-drawing art; 1:1 Python port of grok-build's mermaid.rs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["typer>=0.12"]
+keywords = ["mermaid", "diagram", "ascii", "unicode", "box-drawing", "terminal", "cli", "flowchart", "sequence-diagram"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Documentation",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Repository = "https://github.com/makdoudN/mermaid-unicode"
+Documentation = "https://github.com/makdoudN/mermaid-unicode#readme"
+Issues = "https://github.com/makdoudN/mermaid-unicode/issues"
+
+[project.scripts]
+mermaid-unicode = "mermaid_unicode.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["mermaid_unicode*"]
